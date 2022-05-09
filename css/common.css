@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+	margin:0;
+	padding:0;
+	background-color:#191919;
+	color:#f5f5f5;
+	font-size:1vw;
+}
+h1 {margin:auto; font-size:2.7em; color:#f5f5f5; text-align:center; padding:2%; letter-spacing:7px; font-weight:100;}
+/*Điều khiển độ rộng cột*/
+.col1{width:2%;}
+.col2{width:16.66%;}
+.col3{width:25%;}
+.col4{width:30%;}
+.col5{width:41.66%;}
+.col6{width:50%;}
+.col7{width:58.33%;}
+.col8{width:66.66%;}
+.col9{width:75%;}
+.col10{width:92.5%;}
+.col11{width:97%;}
+.col12{width:100%;}
+/*Kết thúc điều khiển độ rộng cột*/
+
+a { text-decoration:none; color:#f5f5f5;}
+a:hover{ text-decoration:underline; color:#f68d8d; color:#00aef0;}
+/* Responsive screen with media width*/
+#logo {
+	box-shadow: 1px 1px 2px #FFFFFF;
+}
+.Logotext {
+	color: rgb(254, 0, 0);
+	margin-top:3px;
+	font-weight:700;
+	font-size:20px;
+	font-family:Arial;
+	text-shadow: 1px 1px 2px #FFFFFF;
+
+	
+}
+#logoContainer { position:absolute;	left:1.5%; top: 1.5%; text-align:center; z-index:2;}
+#logoContainer img { max-width:100%; height:auto;}
+
+#header { background-color:#000000;	height:83px; padding:0;}
+#header::after {	clear:both;	display:block; content:"";}
+/*Phần CSS cho menu*/
+#menu { float:left; padding-left:8%; margin:0;	list-style-type:none; font-size:21px; text-transform:uppercase; width:70%; }
+#menu::after{ clear:both; display:block; content:"";}
+#menu li { float:left; margin-top:23px; margin-right:0.5%; padding:0.5%; padding-top:1%; transition: background-color 1s;}
+#menu li:hover{ background-color:#999999;}
+#menu li:first-child { position:relative; width: 40px; height:39px; margin-top:23px; background:url(/picture/homeNAGAO.jpg) no-repeat left top;background-size:contain;}
+#menu li:first-child > a { position:absolute; left:0; top:0; width:100%; height:100%;}
+#menu li:last-child { margin-right:0; }
+#menu li a { text-decoration:none; color:#f5f5f5; display:block; transition: color 1s;}
+#menu li a:hover { text-decoration:none; color:#f68d8d;}
+#MenuRight { width:30%; float:right; text-align:right; font-size:21px; padding-right:1.5%; margin-top:10px; margin-left:0;}
+#MenuRight > div:last-child { color:#f5f5f5; background-color:#99CC00;}
+#MenuButton { position:absolute; right:1.5%;  z-index:3; top:0; width:50px; height:50px; background: url(/picture/MenuButton.jpg) no-repeat left top; background-size:contain; display:none;}
+#MenuButton:hover { background:url(/picture/MenuButton2.jpg) no-repeat left top; cursor:pointer;}
+#SmallMenu { display:none; position:absolute; right:1.5%; top:50px; z-index:3; list-style-type:none; font-size:15px; text-transform:uppercase; background-color:#191919; padding:1px; margin:0; }
+#SmallMenu li { border-bottom:1px #000000 inset; margin-bottom:2px; padding:2px;transition: background-color 1s;}
+#SmallMenu li:hover{ background-color:#999999;}
+#SmallMenu li a {text-decoration:none; color:#f5f5f5; display:block; transition: color 1s;}
+#SmallMenu li a:hover { text-decoration:none; color:#f68d8d;}
+
+
+#Breadcum { margin:auto; padding:0.5%; padding-left:9%; color:#8d8d8d; font-size:15px;}
+#Breadcum > a { text-decoration:none; color:#8d8d8d;}
+#Breadcum > a:hover { text-decoration:none; color:#CCCCCC;}
+#Breadcum > a:last-child { color:#f5f5f5;}
+
+/*kết thúc phần css cho menu*/
+
+/* Slide images */
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+/*Kết thúc CSS SlideFrame*/
+
+/*đăng ký nhận news letter*/
+#NewsLetterFrame { margin:auto; margin-top:1.5%;  }
+#NewsLetterFrame::after { clear:both; display:block; content:"";}
+
+#NewsIntro { float:left; border:#333333 1px solid; padding:0; vertical-align:middle; width:90%; background-color:#272727; }
+#NewsIntro > div {  display:inline-block; width:19%; margin-top:20px; padding-left:4.5%; font-size:1.3em;  }
+#NewsIntro > ul { display: inline-block; width:45%; margin:0; padding:0; font-size:1.2em; color:#8d8d8d; }
+#NewsIntro > ul > li {display:inline-block; background-image:url(/picture/checkmark1.jpg); background-repeat:no-repeat; background-position:0 center; padding-left:4%; margin-right: 4%;}
+
+#NewsIntro > input { float:right; width: 30%;; height:62px; background-color:#000000; font-family:"Courier New", Courier, monospace;    color:#8d8d8d; font-size:1.3em; word-spacing:-5px; text-align:center; border:none; transition: 2s;}
+#NewsIntro > input:hover { color:#00aeff;}
+#NewsIntro > input:focus { outline:none; color:#00aeff;}
+#ThanksJoin { display:none; float:right; width: 30%;; height:62px; background-color:#000000; color:rgb(254,0,0); font-size:1.4em; text-align:center; padding-top:1.6%;  border:none; transition: 2s;}
+
+#BtnJoinUs { float:left; width:10%; background-color:#0000FF;  }
+#BtnJoinUs input { width:100%; height:64px; color:#f5f5f5; font-size: 1.3em; border:none; 
+  background:url(../picture/grey_button_grad.png) left top repeat-x #151515; background-size:cover;
+  border-width:1px; border-style:solid; border-color:#545454 #272727 #191919 #404040;
+  transition: all .4s ease-out;
+ 
+}
+#BtnJoinUs input:hover { cursor:pointer;   
+  background:url(../picture/grey_button_grad.png) left top repeat-x #fe0000; background-size:cover;
+  border-color:#f65e5e #f72424 #fe0000 #f84545;
+
+}
+
+#BtnJoinUs input:focus { outline:none;}
+
+/*Simple Menu ở cuối trang*/
+#SimpleMenu {  margin:auto; margin-top:2%;  }
+#SimpleMenu > ul {padding:0; font-size:18px;}
+#SimpleMenu > ul >li{ display:inline-block; background-image:url(/picture/dot2.jpg); background-repeat:no-repeat; background-position:0 center; padding-left:1%; width:30%; margin-bottom: 1.5%;}
+#SimpleMenu > ul >li:hover { background-image:url(/picture/dot.jpg); }
+#SimpleMenu a{ text-decoration:none; color:#f5f5f5;}
+#SimpleMenu a:hover{ text-decoration:none; color:#f5f5f5;}
+#Footer { border-top:#333333 solid 1px; padding-left:1.5%; color:#8d8d8d; font-size:12px; height: 40px;}
+
+
+@media only screen and (max-width: 980px) {
+	body { font-size:1.6vw;}
+	#MenuRight { position:absolute; top:0; width:100%; margin:0; }
+	#MenuRight > div {display:inline-block;}
+	#menu { width:100%;}
+	#logoContainer img { max-width: 70%;} 
+	.Logotext { font-size:18px;}
+	#NewsIntro { width:86%;}
+	#NewsIntro > ul { visibility:hidden; position:absolute;}
+	#NewsIntro > div { width:40%}
+	#NewsIntro > input { width:50%;}
+	#ThanksJoin { width:50%;}
+	#BtnJoinUs { width:14%}
+}
+@media only screen and (max-width: 780px) {
+	h1 { letter-spacing:5px;}
+	#logoContainer { width:50px; }
+	.Logotext { font-size:12px;}
+	#header{ height:60px; }
+	#menu { padding-left:12%; font-size:14px; }
+	#menu li:first-child { width: 30px; height:29px;}
+	#MenuRight { font-size:14px;}
+	#NewsIntro > input { height: 40px;}
+	#ThanksJoin {height:40px;}
+	#NewsIntro > div { margin-top: 10px;}
+	#BtnJoinUs > input { height:42px;}
+	#SimpleMenu > ul >li{ display:block; background-image:none; text-align:center; width:100%; }
+	#SimpleMenu > ul >li:hover { background-image:none;}
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+	h1 { margin-top:30px; letter-spacing:3px;}
+	h2 { font-size:24px;}
+	#logoContainer { width:35px; }
+	#logoContainer .Logotext { font-size:10px;}
+	#header { height:50px;}
+	#MenuRight { font-size: 17px;}
+	#MenuRight > div:last-child { position:absolute; right:1.5%; top:50px; z-index:2;}
+	#menu { font-size:10px; }
+	#menu li:first-child { width: 21px; height:21px;}
+	#Breadcum { margin-top:30px;}
+    #NewsIntro > div { font-size:1.7em; }
+	#NewsIntro > input { font-size:1.7em; word-spacing: -2px; height:30px;}
+	#ThanksJoin {font-size:1.7em; height:30px;}
+
+	#BtnJoinUs > input { font-size:1.5em; word-spacing: -2px; height:32px;}
+
+	
+}
+
+@media only screen and (max-width: 350px) {
+	#MenuRight { text-align:center; font-size:20px; left:60px; top:20px; width:60%;}
+	#MenuRight > div:last-child { display:none;}
+	#menu { font-size:9px;}
+	#menu li { display:none;}
+	#menu li:first-child{ display:block;}
+	#MenuButton{ display:block;}
+}
+

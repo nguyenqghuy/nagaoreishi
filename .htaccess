@@ -1,0 +1,22 @@
+
+   RewriteEngine On
+   RewriteBase /
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule . /index.php [L]
+RewriteRule ^don-hang/$ /donhang.php [L]
+RewriteRule ^cua-hang-linh-chi/$ /CuahangLinhchi.php [L]
+RewriteRule ^xu-ly-don-hang/$ /php/Xulydonhang.php [L]
+RewriteRule ^thong-bao-don-hang/(.*)/(.*)/(.*)/$ /Thongbaodonhang.php?OrderId=$1&Total=$2&Payment=$3 [L]
+RewriteRule ^chung-toi/$ /ChungToi.php [L]
+RewriteRule ^lien-he/$ /Lienhe.php [L]
+RewriteRule ^ho-tro/$ /hotro.php [L]
+RewriteRule ^faqs/$ /FAQs.php [L]
+RewriteRule ^chinh-sach-ban-hang/$ /ChinhSachBanHang.php [L]
+RewriteRule ^news/$ /news/archivio.php [L]
+RewriteRule ^news/(.*)/$ /news/view.php?url=$1 [L]
+RewriteRule ^dai-ly/$ /daily.php [L]
+RewriteRule ^lien-ket/$ /lienket.php [L]
+RewriteRule ^sitemap.html$ /sitemap.php [L]
+
+

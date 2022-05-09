@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+h1 + p { margin:auto; color:#8d8d8d; font-size:16px; margin-bottom:2%;}
+#Topics { margin:auto; background:#212121; border-style:solid; border-width:2px 1px 1px; border-color: #00aeff #404040 #404040; margin-bottom:40px; padding:22px 20px 16px;}
+.buttonFAQ { display:inline-block;  margin: 0 5px 5px 0; padding:10px 4px 10px 4px; 
+	font-size:14px; color:#ffffff; line-height:22px; text-align:center; vertical-align:middle; 
+	 background:url(../picture/grey_button_grad.png)center top repeat-x #151515; 
+	border-width:1px; border-style:solid; border-color:#545454 #272727 #1a1a1a #404040; 
+	transition: all .4s ease-out; text-decoration:none;}
+.buttonFAQ:hover{
+	background:url(../picture/grey_button_grad.png)center top repeat-x #454545;
+	border-color:#7d7d7d #626262 #525252 #6e6e6e;}
+.activetag{
+	background:url(../picture/grey_button_grad.png)center top repeat-x #00aeff;
+	border-color:#99dfff #007ab3 #005780 #33beff; cursor:default;}
+.activetag:hover{
+	background:url(../picture/grey_button_grad.png)center top repeat-x #00aeff;
+	border-color:#99dfff #007ab3 #005780 #33beff; cursor:default;
+}
+
+#Topics ~ div { margin:auto;}
+#Topics ~ div::after{ clear:both; display:block; content:"";}
+h2 {font-weight:100; cursor:pointer; margin:0; padding:0.8%; transition: .5s ease-out; font-size:20px;}
+h2:hover { color:#f68d8d;}
+h2 > span { float:right; font-weight:800; display:none;}
+h2 + div { padding:2.5%; border:1px solid #00aeff; display:none; font-size:16px;  }
+h2 + div > a { text-decoration:none; color:#f68d8d; }

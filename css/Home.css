@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+#CenterDirection{ position:absolute; z-index:2; left:7%; top: 35%;  }
+#CenterDirection > span > a { color:#f5f5f5; font-size:4em; display:block; text-decoration:none; }
+#CenterDirection > a {color:#f5f5f5; font-size:1.6em; text-decoration:none; }
+#CenterDirection #LAInCenter { color:#00aeff;  }
+#CenterDirection a:hover #LAInCenter { color:#f5f5f5;  }
+
+#SlideFrame { margin:auto; position:relative; }
+div#slider { overflow:hidden; width:100%; position:relative;}
+div#slider figure img { width: 20%; float:left; padding:0; margin:0; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  -webkit-animation: 30s slidy infinite; 
+}
+
+/*Kết thúc CSS SlideFrame*/
+/*Các biểu tượng lớn */
+#ListBigIcon{ margin:auto; margin-top:1.5%; }
+#ListBigIcon::after{ clear:both; display:block; content:"";}
+#ListBigIcon > div { float:left; width:23.5%; margin-right:2%; }
+#ListBigIcon > div:last-child {margin-right:0;}
+
+#ListBigIcon img {width:100%; height:auto; opacity: 0.4;transition: opacity 2s; margin:0;
+	filter: alpha(opacity=40); /* For IE8 and earlier */  }
+#ListBigIcon img:hover{ opacity: 1;   }
+
+#BriefGuideMenu { margin:auto; margin-top:2%; margin-bottom:0;}
+
+
+
+.buttonFAQ { display:inline-block;  margin: 0 5px 5px 0; padding:10px 4px 10px 4px; 
+	font-size:14px; color:#ffffff; line-height:22px; text-align:center; vertical-align:middle; 
+	 background:url(../picture/grey_button_grad.png)center top repeat-x #151515; 
+	border-width:1px; border-style:solid; border-color:#545454 #272727 #1a1a1a #404040; 
+	transition: all .4s ease-out; text-decoration:none;}
+.buttonFAQ:hover{
+	cursor:pointer; color:#f5f5f5; text-decoration:none;
+	background:url(../picture/grey_button_grad.png)center top repeat-x #454545;
+	border-color:#7d7d7d #626262 #525252 #6e6e6e;}
+.activetag{
+	background:url(../picture/grey_button_grad.png)center top repeat-x #00aeff;
+	border-color:#99dfff #007ab3 #005780 #33beff; cursor:default;}
+.activetag:hover{
+	background:url(../picture/grey_button_grad.png)center top repeat-x #00aeff;
+	border-color:#99dfff #007ab3 #005780 #33beff; cursor:default;
+}
+
+#BriefGuide { margin:auto; margin-top:0; background-color:#272727; padding:4px;}
+#BriefGuide h2 { margin:0; padding:1%; font-weight:100;}
+#BriefGuide h3 { color:#ffffff;}
+#BriefGuide > div { display:none;}
+#BriefGuide > div > div { background-color:#191919; border:inset 2px #999999; padding:12px; line-height:20px; font-size:15px; }
+#BriefGuide > div:first-child { display:block;}
+#BriefGuide > div:first-child::after { display:block; clear:both; content:"";}
+#BriefGuide > div:first-child > div{ float: left; width:48%; margin-bottom:2%;}
+#BriefGuide > div:first-child > div:nth-child(even) { margin-right:4%;}
+
+@media only screen and (max-width: 980px) {
+	#CenterDirection{ top: 35%;}
+}
+@media only screen and (max-width: 780px) {
+	
+	#CenterDirection{ top: 30%;}
+	#CenterDirection > span { }
+	#BriefGuide > div:first-child > div { width:100%; margin-right:0;}
+}
+@media only screen and (max-width: 480px) {
+	#CenterDirection{ top: 25%;}
+	#CenterDirection > span { }
+
+}
+
+

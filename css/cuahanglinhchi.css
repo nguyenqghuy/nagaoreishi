@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Hien thi hinh san pham*/
+
+#ProductContainer { margin:auto;}
+#ProductContainer::after { clear:both; display:block; content:"";}
+#ProductContainer > div { float:left; width:30%; overflow:hidden; border: 1px solid #FF9900; margin-bottom:3%; }
+#ProductContainer > div:first-child { margin-right:5%;}
+#ProductContainer > div:nth-child(4) { margin-right:5%;}
+#ProductContainer > div:nth-child(3) { float:right; margin-left:5%;}
+#ProductContainer > div > figure { position:relative; width:500%; margin:0; left:0; animation: 30s slidy infinite; -webkit-animation: 30s slidy infinite; }
+#ProductContainer > div > figure > img { width:20%; float:left;}
+#ProductContainer > div > img { width:100%;}
+
+#ProductContainer > div > div { }
+#ProductContainer > div > div > span {text-align:center; display:block;}
+#ProductContainer > div > div > span:first-child { font-size:2em;}
+#ProductContainer > div > div > span:nth-child(2) { font-size:1.7em; color:#8d8d8d;}
+#ProductContainer > div > div > span:nth-child(2) :hover { color:#f5f5f5;}
+#ProductContainer > div > div > div { font-size:15px; padding:1%; line-height:24px;}
+#ProductContainer > div > div > div  label { color:#8d8d8d;}
+#ProductContainer > div > div > div > div { height:80px;}
+
+/* ------------------Hien thị thông tin sản phẩm---------------------*/
+
+#ProductInfo { margin: auto; margin-top:4%; border-top:1px solid #333333; padding: 2%; padding-top:3%;}
+#ProductInfo > div:first-child::after { clear:both; display:block; content:"";}
+#ProductInfo > div:first-child > b { float:left; font-size:3em; font-weight:100;}
+		/*Nút button đặt hàng*/
+#ProductInfo > div:first-child > span { float:right; width:17%;} 
+#ProductInfo input { width:100%; height:55px; padding:0; color:#f5f5f5; font-size: 2em; font-family:"Courier New", Courier, monospace;word-spacing:-5px; 
+	background: url(../picture/grey_button_grad.png) center top repeat-x #2d800d;
+	border-style:solid; border-width:1px; border-color:#50bb25 #2c6614 #1a3c0c #49aa22;
+	transition: all .4s ease-out;
+}
+#ProductInfo input:hover { cursor:pointer; background: url(../picture/grey_button_grad.png) center top repeat-x #5ace2c;
+	border-color:#7aed4c #45ba17 #349e0b #6ddf40;
+}
+		/*Thông tin cơ bản đặt hàng*/
+#ProductInfo > ul { margin:0; padding:0; margin-top:2.7%; font-size:1.3em;}
+#ProductInfo > ul > li { position:relative; display:inline-block; width:32%; background:url(../picture/dot3.jpg) 0  no-repeat; padding-left:1.2%; margin-bottom:1.5%; }
+#ProductInfo > ul > li:hover { cursor:pointer;}
+#ProductInfo > ul > li:hover > div { display:block;}
+		/* Thông tin chú giải chi tiết*/
+#ProductInfo > ul > li > div { display:none; position:absolute; bottom:10px;}
+#ProductInfo > ul > li > div > div:first-child { background-color:#2d800d; font-size:15px;}
+#ProductInfo > ul > li > div > div:last-child { background:url(../picture/Guide.png) center top no-repeat;}
+
+
+/*----------------Đặc điểm sản phẩm---------------------------*/
+#Feature { margin:auto; margin-top:0; margin-bottom:1.5%; border-top: 1px solid #333333; padding:2%; padding-top:0; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; }
+#Feature::after{ clear:both; display:block; content:"";}
+#Feature h2 { font-size:2.5em; font-weight:100;}
+#Feature > div { float:left;  font-size:1.3em;}
+.FeatureFirstCol { width:30%; text-align:right; margin-right:2%; color:#8d8d8d;}
+.FeatureLastCol { width:68%; text-align:left; color:#F5F5F5;}
+
+
+@media only screen and (max-width: 1150px) {
+	#ProductContainer > div { float:left; width:45%; margin:0; margin-bottom:5%;}
+	#ProductContainer > div:nth-child(2) {float:right;}
+	#ProductContainer > div:nth-child(3) {float:left; margin:0;margin-bottom:5%;}
+	#ProductContainer > div:nth-child(4) {float:right; margin:0;margin-bottom:5%;}
+}
+@media only screen and (max-width: 980px) {
+	#ProductInfo > ul > li { width:48%; padding-left:1.6%;}
+}
+@media only screen and (max-width: 780px) {
+	#ProductContainer > div { width:100%; margin:0; margin-bottom:2%;}
+	#ProductContainer > div > div > span:first-child { font-size:3em;}
+	#ProductContainer > div > div > span:last-child { font-size:2.7em;}
+
+	#ProductInfo > ul { font-size:1.7em;}
+	#ProductInfo input { height:45px;}
+	#Feature > div { font-size:1.7em;}
+}
+
+
+@media only screen and (max-width: 480px) {
+	#ProductInfo input { height:35px;}
+	#ProductInfo > ul { font-size:2.5em;}
+	#ProductInfo > ul > li { width:100%;}
+	#Feature > div { font-size:2.5em;}
+	.FeatureFirstCol { width:39%; text-align:right; margin-right:2%; color:#8d8d8d;}
+	.FeatureLastCol { width:59%; text-align:left; color:#F5F5F5;}
+
+	
+
+}

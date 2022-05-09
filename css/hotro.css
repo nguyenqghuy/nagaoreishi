@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#HotroContainer { margin:auto;}
+#HotroContainer::after { clear:both; display:block; content:"";}
+#HotroContainer > p { color:#8d8d8d; font-size:16px; margin-bottom:4%; }
+#HotroContainer h2 { font-weight:100; font-size: 19px; color:#f5f5f5;}
+#HotroContainer nav { font-size:14px; color:#8d8d8d;}
+.FCol { float:left; width:48%; margin-right:4%; padding-left:80px; background:url(../picture/FAQIcon.jpg) no-repeat left center; transition: 0.5s;}
+.FCol:hover { background:url(../picture/FAQIcon2.jpg) no-repeat left center; cursor:pointer;}
+.SCol { float:left; width: 48%; padding-left:80px; background:url(../picture/ContactIcon.jpg) no-repeat left center; transition: 0.5s;  margin-bottom:5%;}
+.SCol:hover {background:url(../picture/ContactIcon2.jpg) no-repeat left center; cursor:pointer; }
+
+@media only screen and (max-width: 480px) {
+	.FCol { width:100%;}
+	.SCol { width:100%;}
+}

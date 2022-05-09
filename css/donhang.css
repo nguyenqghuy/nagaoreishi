@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+#BillContainer { margin:auto; margin-bottom:5%;}
+#BillContainer::after { clear:both; display:block; content:"";}
+#BillContainer > div { width:32%; float:left; margin-right:2%;}
+#BillContainer > div:last-child { margin-right:0;}
+/*Định dạng dòng chữ tiêu đề */
+#BillContainer nav { font-size:28px; border-bottom: 1px solid #333333; padding-bottom:2%; margin-top:10%; margin-bottom:4%;}
+#BillContainer nav > span { color:#00aef0;}
+/*Định dạng nội dung điền vào form bên dưới*/
+#BillContainer btr { width:90%; margin:auto; margin-bottom:2%; display:block; font-size:15px; }
+#BillContainer btr a { color:#FFFFFF;}
+/*#BillContainer btr > span { color:#f78080;}*/
+#BillContainer btr > span { color:#00aef0;}
+#BillContainer btr > input[type="text"], input[type="email"], select, textarea { width:100%; margin-bottom:2%; color:#333333; background-color:#eee; font-family:"Courier New", Courier, monospace; padding:1.8%; border-radius:3px; 
+  border:1px solid #ccc; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); transition: border linear .2s,box-shadow linear .2s }
+#BillContainer #couponcode { width:60%;}
+#BillContainer btr > input[type="button"]{ width:30%; padding:0; color:#f5f5f5; padding:1.8%; font-size:18px;  font-family:"Courier New", Courier, monospace ;
+	background: url(../picture/grey_button_grad.png) left top repeat-x #2d800d; background-size:cover;
+	border-style:solid; border-width:1px; border-color:#50bb25 #2c6614 #1a3c0c #49aa22;
+	transition: all .4s ease-out;}
+#BillContainer btr > input[type="button"]:hover { cursor:pointer; 
+	background: url(../picture/grey_button_grad.png) center top repeat-x #5ace2c; background-size:cover;
+	border-color:#7aed4c #45ba17 #349e0b #6ddf40;}
+#CouponMsg{ color:	 rgb(254, 0, 0); display:block;}
+#CouponRow{ display:none;}
+#BillContainer >div:first-child label { font-style:italic; padding-left:20%;}
+#BillContainer select { width:80%; }
+#BankInfo { background:#333333; padding:3%; display:block; border: 1px solid #404040;}
+
+	/*Định dạng table order review*/
+#OrderReview { width:90%; margin:auto; font-size:15px;}
+#OrderReview > div::after { clear:both; display:block; content:"";}
+#OrderReview > div > label {float:left;}
+.OrderRow {border-bottom:1px solid #333333; padding-bottom:4%; margin-bottom:4%;}
+.OrderRow > label:first-child { width:28%;}
+.OrderRow > label:nth-child(2) { width:31%;}
+.OrderRow > label:nth-child(3) { width:9%;}
+.OrderRow > label:nth-child(4) { width:32%;}
+.CalRow { margin-bottom:4%; }
+.CalRow > label:first-child { width:65%;}
+.CalRow > label:nth-child(2) { width:35%;}
+.CalTotal {border-bottom:1px solid #333333; padding-bottom:4%; margin-bottom:4%; font-weight:600; font-size:17px;}
+.CalTotal > label:first-child { width:65%;}
+.CalTotal > label:nth-child(2) { width:35%;}
+
+	/*Định dạng comment*/
+#CommentLabel { display:block; width:90%; margin:auto; font-size:2em; padding-bottom:2%}
+#BillContainer btr > textarea { height:80px; resize: vertical;}
+	/*Định dạng button*/
+#BillContainer btr > input[type="submit"] { width:100%; height:40px; padding:0; color:#f5f5f5; font-size: 25px; font-family:"Courier New", Courier, monospace ; margin-top:5%; 
+	background: url(../picture/grey_button_grad.png) left top repeat-x #2d800d; background-size:cover;
+	border-style:solid; border-width:1px; border-color:#50bb25 #2c6614 #1a3c0c #49aa22;
+	transition: all .4s ease-out;}
+#BillContainer btr > input[type="submit"]:hover { cursor:pointer; 
+	background: url(../picture/grey_button_grad.png) center top repeat-x #5ace2c; background-size:cover;
+	border-color:#7aed4c #45ba17 #349e0b #6ddf40;}
+
+@media only screen and (max-width: 980px) {
+	#BillContainer > div { width:50%;}
+}	
+@media only screen and (max-width: 780px) {
+	#BillContainer > div { width:100%;}
+
+}

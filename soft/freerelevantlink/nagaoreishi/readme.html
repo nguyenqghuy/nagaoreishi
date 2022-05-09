@@ -1,0 +1,111 @@
+<html>
+<head>
+	<style>
+		body {font-family:arial; font-size:8pt;}
+		div {font-family:arial; font-size:8pt;}
+		td {font-family:arial; font-size:8pt;}
+	</style>
+</head>
+<body>
+
+<div style="text-align:center; font-weight:bold; font-size:14pt; text-decoration:underline; padding-bottom:25px;">Installation Instructions</DIV>
+
+<div style="text-align:center; font-weight:bold; font-size:12pt; padding-bottom:15px;">
+	If the file attached to this message is missing or not working please <a href="http://users.freerelevantlinks.com/autodownload.php?platform=PHP&domainid=90265" target="_blank">click here</a> to start download.
+</div>
+
+<table cellspacing="0" cellpadding="5" width="100%"><tr><td><p>
+	<tr>
+		<td colspan="3" style="padding: 15px;" height="400" valign="top" width="100%">
+			<table align="center" cellpadding="1" cellspacing="1" width="100%">
+				<tr>
+					<td colspan="2" style="padding-top: 10px; padding-bottom: 10px;">
+						<style type="text/css">
+						<!--
+						.style1 {font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+						.style2 {font-family: Arial, Helvetica, sans-serif}
+						.style3 {font-family: Arial, Helvetica, sans-serif; color: #129616; font-weight: bold;}
+						.style4 {font-size: 18px; font-weight: bold; color: #BE0000;}
+						-->
+						</style> 
+						<table align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+							<tr>
+								<td valign="top" style="text-align: center;" valign="top" width="46"><img alt="" src="http://users.freerelevantlinks.com/images/uploadfiles2.jpg" width="100px;" align="" border="0"></td>
+								<td valign="top">
+									<div style="color:red; font-weight:bold; font-size:12pt;">STEP 1: Download Plugin Files</div>
+									<div class="style2" style="padding-left:25px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">Unzip and upload all the files in the download package to your root directory where your home <i>or</i> index page is located.</div>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" style="text-align: center;" valign="top"><img alt="" src="http://users.freerelevantlinks.com/images/addcode2.jpg" width="100px;" align="" border="0"></td>
+								<td valign="top">
+									<div style="color:red; font-weight:bold; font-size:12pt;">STEP 2: Changes to Existing Files</div>
+										<div style="color:blue; font-weight:bold; font-size:12pt; padding-left:20px; padding-top:15px;">Standard PHP Sites:</div>
+											<div class="style2" style="padding-left:40px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+												If your home page ends with ".php". Then place the following just before 
+												<span style="color:red;">&lt;/body&gt;</span> tag on the bottom of your home page, usually the 
+												<span style="color:red;">/index.php</span> file.
+												<br>
+												<u>NOTE:</u> For the best results install on all site pages 
+												or in your template footer, so that the plugin code is included on each existing page of your website.</div>
+											</div>
+											<div style="font-size: 14pt; text-align:center; padding-left:40px; padding-top:15px; padding-bottom:15px;" class="style3">&lt;?php require_once($_SERVER['DOCUMENT_ROOT'] . "/nagaoreishi.php"); ?&gt;</div>
+
+										<div style="color:blue; font-weight:bold; font-size:12pt; padding-left:20px; padding-top:15px;">WordPress Sites:</div>
+											<div class="style2" style="padding-left:40px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+												If your site is built with WordPress or other similar template tools, then place the following code
+												in the <span style="color:red;">FOOTER</span> template. In the WordPress admin panel select <i>Appearance / Editor</i>,
+												then from the Tempaltes list on the left select <i>Footer</i>. Go to the very bottom of the Footer template and add the
+												following code and then "<i>Update File</i>":
+											</div>
+											<div style="font-size: 14pt; text-align:center; padding-left:40px; padding-top:15px; padding-bottom:15px;" class="style3">&lt;?php require_once($_SERVER['DOCUMENT_ROOT'] . "/nagaoreishi.php"); ?&gt;</div>
+											<!--<div class="style2" style="padding-left:40px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+												Most WordPress websites will also require a change the ".htaccess" file (found in the root directory of
+												all WordPress websites).<br>Directly ABOVE the line of code: "RewriteRule ^index\.php$ - [L]" add the following:
+												<div style="font-size: 14pt; text-align:center; padding-left:40px; padding-top:15px; padding-bottom:15px;" class="style3">RewriteRule ^nagaoreishi\.php$ - [L]</div>
+											</div>-->
+
+										<div style="color:blue; font-weight:bold; font-size:12pt; padding-left:20px; padding-top:15px;">Joomla Sites:</div>
+											<div class="style2" style="padding-left:40px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+												If your site is built with Joomla or other similar template tools, then place the following code
+												on a line of its own at the bottom of the <span style="color:red;">/index.php</span> file:
+											</div>
+											<div style="font-size: 14pt; text-align:center; padding-left:40px; padding-top:15px; padding-bottom:15px;" class="style3">require_once($_SERVER['DOCUMENT_ROOT'] . "/nagaoreishi.php"); </div>
+											
+										<div style="color:blue; font-weight:bold; font-size:12pt; padding-left:20px; padding-top:15px;">HTML Sites</div>
+											<div class="style2" style="padding-left:40px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+												If your home page ends with ".htm" or ".html", then place the following just before the
+												<span style="color:red;">&lt;/body&gt;</span> tag on the bottom of your home page.
+												<br>
+												<u>NOTE:</u> For the best results install on each page of your website.
+											</div>
+											<br>
+											<div style="color:#45A162; font-weight:bold; padding-left:50px; padding-right:50px;"> 
+												&lt;center&gt;&lt;a href=&quot;/nagaoreishi.php?Action=1&amp;k=keyword-2&quot;&gt; Articles &lt;/a&gt;  - &lt;a href=&quot;/nagaoreishi.php?Action=2&amp;k=nam-linh-chi&quot;&gt; News &lt;/a&gt;  - &lt;a href=&quot;/nagaoreishi.php?Action=sitemap&quot;&gt; SiteMap &lt;/a&gt; &lt;/center&gt; 
+											</div>
+								</td>
+							</tr>
+							<tr><td valign="top" style="text-align: center; padding-top:25px;">&nbsp;</td></tr>
+							<tr>
+								<td valign="top" style="text-align:center;" valign="top"><img alt="" src="http://users.freerelevantlinks.com/images/checkinstallation2.jpg" width="100px;" align="" border="0"></td>
+								<td valign="top">
+									<div style="color:red; font-weight:bold; font-size:12pt;">STEP 3: Test Plugins</div>
+									<div class="style2" style="padding-left:25px; color: rgb(69, 69, 69); font-size: 11pt; font-weight:bold;">
+									Click on the link below to verify the plugin installation.<br>
+									<br>
+									<a title="Test Plugin Installation" href="http://users.freerelevantlinks.com/?q=testinstall/90265/PHP" class="linkmaster">
+									<img title="Test Plugin Installation" alt="Test Plugin Installation" src="http://users.freerelevantlinks.com/images/testplugin.jpg" align="absmiddle" border="0">
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</div>
+</body>
+</html>

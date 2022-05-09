@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+box-sizing: border-box;
+}
+body{ padding:0; margin:0;}
+#OrderContainer > div::after { clear:both; display:block; content:"";}
+#OrderContainer > div:first-child { height:25px; }
+#OrderContainer > div:hover { background-color:#FFFFCC;}
+#OrderContainer > div > div {float:left; border-right:1px solid #ffffff; height:100%;}
+#OrderContainer > div > div:first-child { width:3%; text-align:center;}
+#OrderContainer > div > div:nth-child(2){width:9%;}
+#OrderContainer > div > div:nth-child(2) > div { display:none; position:fixed; left:400px; top:80px; width:400px; background-color:#0099FF; color:#ffffff;}
+#OrderContainer > div > div:nth-child(2) > div p { margin:2px;}
+#OrderContainer > div > div:nth-child(2) > div b { float:left; width:40%; padding-left:10px;}
+#OrderContainer > div > div:nth-child(2):hover { cursor:pointer;}
+#OrderContainer > div > div:nth-child(2):hover > div { display:block;}
+#OrderContainer > div > div:nth-child(3){width:14%;}
+#OrderContainer > div > div:nth-child(4){width:14%;}
+#OrderContainer > div > div:nth-child(5){width:13%;}
+#OrderContainer > div > div:nth-child(5) div {display: none;}
+#OrderContainer > div > div:nth-child(5) input { width:100%;}
+#OrderContainer > div > div:nth-child(6){width:20%;}
+#OrderContainer > div > div:nth-child(7){width:6%; text-align:center;}
+#OrderContainer > div > div:nth-child(8){width:9%; text-align:right;}
+/*#OrderContainer > div > div:nth-child(9){width:19%;}*/
+#OrderContainer > div > div:nth-child(9){width:12%; text-align:center; border-right:none;}
+
+
+#OrderContainer > div:first-child > div{ background-color:#3366FF; color:#FFFFFF; text-align:center;}
+
+#OrderContainer + div { margin-top:50px;}
+#OrderContainer + div::after{ clear:both; display:block; content:"";}
+#OrderContainer + div > div:first-child { float:left; }
+#OrderContainer + div > div:nth-child(2) { float:right;}
+
+
+.EditPhone{ color:#990000; }

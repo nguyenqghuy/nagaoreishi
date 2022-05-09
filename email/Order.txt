@@ -1,0 +1,62 @@
+﻿
+<p>MÃ ĐƠN HÀNG:--OrderId--</p>
+<p>Ngày đặt hàng:--Date--</p>
+<p>Thanh toán:--Payment--</p>
+<p>Tên:--FirstName--</p>
+<p>Họ:--LastName--</p>
+<p>Phone:--Phone--</p>
+<p>Địa chỉ:--Address--</p>
+<p>Thành phố:--City--</p>
+<p>Email:--Email--</p>
+<p>Ghi Chú:--Comment--</p>
+
+
+			
+			
+				<table border="1">
+					<tr>
+					<td>Tên</td>
+					<td>Giá</td>
+					<td>Sl</td>
+					<td>Tiền</td>
+					</tr>
+				
+				    <tr>
+					<td>LCXL</td>
+					<td>--PriceXL--</td>
+					<td>--QuantityXL-- kg</td>
+					<td>--AmountXL--</td>
+					</tr>
+					<tr>
+					<td>LCNT</td>
+					<td>--PriceNT--</td>
+					<td>--QuantityNT-- kg</td>
+					<td>--AmountNT--</td>
+					</tr>
+					<tr>
+					<td>LCCC</td>
+					<td>--PriceCC--</td>
+					<td>--QuantityCC-- hộp</td>
+					<td>--AmountCC--</td>
+					</tr>
+					<tr>
+					<td>LCCK</td>
+					<td>--PriceCK--</td>
+					<td>--QuantityCK-- kg</td>
+					<td>--AmountCK--</td>
+					</tr>
+					<tr>
+					<td>LCtrphấn</td>
+					<td>--PriceTP--</td>
+					<td>--QuantityTP-- kg</td>
+					<td>--AmountTP--</td>
+					</tr>
+				</table>
+
+<p>Thành tiền:--SubTotal--</p>
+<p>Kết nối NAGAO:--DiscountConnect--</p>
+<p>Thanh toán qua ngân hàng:--DiscountPayment--</p>	
+<p>Đơn hàng lớn:--DiscountValue--</p>
+<p>Discount Coupon: --DiscountCoupon--</p>
+<p>Tổng cộng:--Total--</p>
+					

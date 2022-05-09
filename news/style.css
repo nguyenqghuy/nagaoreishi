@@ -1,0 +1,224 @@
+/*****************************************************************
+*  Spacemarc News 
+*  Author and copyright (C): Marcello Vitagliano
+*  Web site: http://www.spacemarc.it
+*  License: GNU General Public License
+*
+*  This program is free software: you can redistribute it and/or 
+*  modify it under the terms of the GNU General Public License 
+*  as published by the Free Software Foundation, either version 3 
+*  of the License, or (at your option) any later version.
+*****************************************************************/
+
+/* generale */
+body {
+	background-color: #FFFFFF; 
+	color: #000000; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+/* testo */
+.text {
+	font-size: 13px;
+	}
+
+.text2 {
+	font-size: 10px;
+	}
+	
+.help {
+	font-size: 13px;
+	cursor: help;
+	border-bottom: 1px dotted #000;
+	}
+
+/* messaggi di errore */
+#error {
+	width: 290px; 
+	background: #FF0000;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1px;
+	}
+	
+#error2 {
+	width: 230px;
+	background: #FF0000;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	}
+
+	
+/* messaggi di successo */
+#success {
+	width: 100%; 
+	background: #FFFFFF;
+  	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+	/*margin: 0 auto;*/
+	text-align: center;
+	}
+#success textarea {
+	width:80%;
+	margin:auto;
+	height:100px;
+}	
+
+/* link  */
+a:link, a:visited {
+	text-decoration: none; 
+	color: #0000FF; 
+	}
+	
+a:hover {
+	text-decoration: underline; 
+	color: #0000FF; 
+	}
+
+/* link piccoli */
+a.piccolo:link, a.piccolo:visited {
+	text-decoration: none; 
+	color: #0000FF; 
+	font-size: 10px;
+	}
+a.piccolo:hover {
+	text-decoration: underline; 
+	color: #0000FF; 
+	font-size: 10px;
+	}
+	
+/* Paginazione link */
+
+a.pager:link, a.pager:visited {
+	text-decoration: none; 
+	color: #0000FF; 
+	font-size: 10px;
+	}
+	
+a.pager:hover {
+	text-decoration: underline; 
+	color: #0000FF; 
+	font-size: 10px;
+	}
+
+/* Paginazione testo */
+.pagertext {
+	font-size: 10px;
+	color: #000000;
+}
+
+
+/* sfondo celle menu */
+.toprow {
+	background-image: url(images/toprow2.png);
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/* box login */
+#login {
+	border: 1px solid #AAAAAA; 
+	width: 360px;
+	background: #E1E1E1;
+	color: #000000;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2px;
+	}
+	
+/* footer */
+#footer {
+	width: 100%; 
+	background: #C2D8FE;
+	text-align: center;
+	padding: 1px;
+	}
+	
+/* tools */
+#tools {
+	width: 620px; 
+	padding: 1px;
+	float: left;
+	text-align: left;
+	margin-top: 5px;
+}
+
+/* paginazione */
+#paginazione {
+	float: right;
+	width: 340px; 
+	text-align: right;
+	padding: 1px;
+	margin-top: 8px;
+	}
+
+/* contiene la notizia */
+#container {
+	padding: 1px;
+	}
+
+#titolo_art{
+	width: 100%;
+	padding: 1px;
+}
+
+#body_art{
+	padding: 3px;
+	width: 100%;
+}
+
+#sbookmark{
+	padding: 1px;
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: right;
+}
+
+#tool_art{
+	padding: 1px;
+	width: 100%;
+	text-align: left;
+}
+
+div.pager_art{
+	float: left;
+	margin-left: 2px;
+	background: #FFFFFF;
+	font-size: 10px;
+    }
+
+div.imgap { 
+	float: left; 
+	margin: 2px 6px 3px 0px; 
+	width: 98px;
+}
+
+.searchbox {
+	background-image: url(images/search.png); 
+	background-repeat: no-repeat; 
+	background-position: left; 
+	padding-left: 18px;
+}
+
+.replacebox {
+	background-image: url(images/replace.png); 
+	background-repeat: no-repeat; 
+	background-position: left; 
+	padding-left: 18px;
+}
+
+.select_categorie {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.hp {
+	position: absolute;
+	left: -3000px;
+}

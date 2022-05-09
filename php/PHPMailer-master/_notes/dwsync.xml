@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".gitignore" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name=".scrutinizer.yml" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name=".travis.yml" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="changelog.md" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="class.phpmailer.php" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="class.pop3.php" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="class.smtp.php" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="composer.json" local="130845184363875385" remote="0" testing="130845184360000000" />
+<file name="composer.lock" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="LICENSE" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="PHPMailerAutoload.php" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="README.md" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="travis.phpunit.xml.dist" local="130807043620000000" remote="0" testing="130807043620000000" />
+<file name="VERSION" local="130807043620000000" remote="0" testing="130807043620000000" />
+</dwsync>
