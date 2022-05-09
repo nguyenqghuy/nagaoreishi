@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<?php include "php/header.php"; ?>
+<?php include "php/header.php"; ?>hfd
 	
 	<!--Phần thân-->
 		<?php require "php/constant.php"; ?>
